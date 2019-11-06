@@ -1,0 +1,23 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajat",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^12.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatpandey00/node-tutorials.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rajatpandey00/node-tutorials/issues"
+  },
+  "homepage": "https://github.com/rajatpandey00/node-tutorials#readme",
+  "description": ""
+}
