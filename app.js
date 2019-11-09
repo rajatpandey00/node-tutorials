@@ -1,7 +1,7 @@
-// const util = require('./notes.js')
 // // util('notesToRead.txt')
 // util()
-const chalk = require('chalk')
+// const chalk = require('chalk')
+const notesUtilities = require('./notes.js')
 const yargs = require('yargs')
 const fs = require('fs')
 //console.log(chalk.bold.inverse.green('SUCCESS!'))
@@ -23,17 +23,17 @@ yargs.command({
             type: String,
         }
     },
-    handler: function (argv) {
+    handler: (argv) => {
         const title = argv.title
-        const fileName = `${title}.txt`
         const body = argv.body
         //console.log('Adding Notes with title', argv.title)
         //console.log('Adding Notes with optional body', argv.body || '')
-        if(!fs.existsSync(fileName)){
-            fs.writeFileSync(fileName, body)
-         } else {
-            fs.appendFile(fileName, body, () => {}) // callBack is added for appending file
-        }
+        // if(!fs.existsSync(fileName)){
+        //     fs.writeFileSync(fileName, body)
+        //  } else {
+        //     fs.appendFile(fileName, body, () => {}) // callBack is added for appending file
+        // }
+        notesUtilities.addNotes(title, body)
     }
  })
 //Removing note
