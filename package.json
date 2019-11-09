@@ -8,7 +8,10 @@
   "author": "Rajat",
   "license": "ISC",
   "dependencies": {
-    "validator": "^12.0.0"
+    "chalk": "^2.4.2",
+    "nodemon": "^1.19.4",
+    "validator": "^12.0.0",
+    "yargs": "^14.2.0"
   },
   "devDependencies": {},
   "repository": {
